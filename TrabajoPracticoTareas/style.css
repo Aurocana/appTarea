@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #de7bc0;
+}
+.panelControl i {
+  font-size: 30px;
+  cursor: pointer;
+  color: #ecc800;
+}
+.titulo {
+  font-size: 40px;
+  padding: 20px;
+  margin: 0;
+  color: white;
+}
+
+.oscuro {
+  background-color: gray;
+}
+
+.oculto {
+  visibility: hidden;
+}
+
+.contenido {
+  display: flex;
+  height: 100vh;
+}
+
+.panelControl {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 30%;
+  align-items: flex-end;
+  gap: 15px;
+  padding: 20px;
+}
+/* CSS */
+.button-24 {
+  background: #de7bc0;
+  border: 1px solid #de7bc0;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #de7bc0;
+}
+
+.button-24:active {
+  opacity: 0.5;
+}
+
+i {
+  cursor: pointer;
+}
+.basurero:hover {
+  color: red;
+  transform: scale(1.4);
+}
+
+.editar:hover {
+  color: rgb(0, 216, 254);
+  transform: scale(1.4);
+}
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+  margin: 20px auto;
+  position: relative;
+}
+table thead {
+  height: 20px;
+  background: #ffed86;
+}
+table tbody tr {
+  text-align: center;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* MODAL */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+.formularioModal {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  gap: 10px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal-edit {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+.formularioModal {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  gap: 10px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

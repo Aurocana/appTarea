@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tareas</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="formularioModal">
+
+        <label>Titulo</label>
+        <input type="text" value="Titulo" placeholder="Titulo" id="tituloTarea" maxlength="15">
+        <label>Estado</label>
+        <select id="estadoTarea">
+          <option value="Pendiente">Pendiente</option>
+          <option value="Proceso">En Proceso</option>
+          <option value="Terminado">Terminado</option>
+        </select>
+        <button class="button-24" id="btnGuardar">Guardar</button>
+      </div>
+    </div>
+
+
+  </div>
+  <div id="modalEditar" class="modal-edit">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="closeEdit close">&times;</span>
+      <div class="formularioModal">
+
+        <label>Titulo Antiguo</label>
+        <input type="text" id="tituloTareaAntigua" disabled>
+        <label>Titulo Nuevo</label>
+        <input type="text" value="Titulo" placeholder="Titulo" id="tituloTareaNueva" maxlength="15">
+        <label>Estado</label>
+        <select id="estadoTareaNueva">
+          <option value="Pendiente">Pendiente</option>
+          <option value="Proceso">En Proceso</option>
+          <option value="Terminado">Terminado</option>
+        </select>
+        <button class="button-24" id="btnEditar">Editar</button>
+      </div>
+    </div>
+
+
+  </div>
+  <div id="principal">
+    <header class="header">
+      <h1 class="titulo">App Tarea</h1>
+
+    </header>
+    <main class="contenido">
+      <div class="panelControl">
+        <button class="button-24" id="btnCrear">Crear</button>
+        <button class="button-24" id="btnPendiente">Pendiente</button>
+        <button class="button-24" id="btnProceso">En Proceso</button>
+        <button class="button-24" id="btnTerminado">Terminado</button>
+        <button class="button-24" id="btnTodos">Todos</button>
+        <i class="fa-solid fa-sun oculto" id="sol"></i>
+        <i class="fa-solid fa-moon" id="luna"></i>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Estado</th>
+            <th>Editar</th>
+            <th>Borrar</th>
+          </tr>
+        </thead>
+        <tbody id="cuerpoTabla">
+        </tbody>
+      </table>
+    </main>
+  </div>
+  <script src="./main.js"></script>
+</body>
+
+</html>
